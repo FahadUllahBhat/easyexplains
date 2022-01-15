@@ -31,6 +31,75 @@ font-weight: 600;
 .input-nav{
     border-radius: 25px;
 }
+.collapse {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-toggler {
+    border: 0;
+    margin-left: 1.5rem !important;
+}
+
+.navbar-toggler {
+    width: 38px;
+    padding: 2px;
+    border: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
+}
+
+.toggler-icon {
+    width: 30px;
+    height: 3px;
+    background-color: tomato;
+    display: block;
+    transition: all 0.2s !important;
+}
+
+.middle-bar {
+    margin: 5px auto;
+}
+
+.navbar-toggler .top-bar {
+    transform: rotate(45deg) !important;
+    transform-origin: 10% 10% !important;
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    transform: rotate(-45deg) !important;
+    transform-origin: 10% 10% !important;
+}
+
+
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0) !important;
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important;
+    margin-right: 10px;
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0) !important;
+}
+
+.navbar-toggler.collapsed .toggler-icon {
+    background-color: #f5f3f0 !important;
+}
 .btn-nav{
     border:solid 1px #D8DDB7;
     color: #D8DDB7;
@@ -51,6 +120,7 @@ text-align: left;
 color: rgb(223, 206, 187) !important;
 overflow: hidden;
 }
+
 .header-div > a{
     position: absolute;
 left: 8.5%;
@@ -73,7 +143,7 @@ border-radius: 25px;
   .search-form{
       margin: auto;
   }
- 
+
   .navbar-brand{
       color: #feffff !important;
   }
@@ -83,20 +153,24 @@ width: 16rem;
 
 }
 .navbar{
-    position: static;
+  
     background-color: #1F2833;
+    z-index: 999 !important;
+}
+.collapse{
+    z-index: 9 !important;
 }
 .header-div > h1{
     text-align: center;
     left: 0%;
-  
+   z-index: 1;
 }
 .header-div > a{
 left: 26%;
 top: 52%;
 }
 .img1{
-  height: 40rem !important;
+  height: 30rem !important;
   background-size: cover;
 }
 .btn-nav{
@@ -127,6 +201,9 @@ color: #feffff !important;
 }
 .main-blog-sec{
     margin-top:0rem !important;
+}
+.left-sec-img1{
+    margin-top: 2rem;
 }
 }
 .img1{
