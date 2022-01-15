@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: #1f2833;
+}
+.horse-img1{
+    width: 100%;
+    height: fit-content;
+}
+.horse-main-cont{
+    margin-top: 10%;
+}
+.main-header > h1{
+overflow: hidden;
+font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+}
+.horse-info-ul > li{
+line-height: 30px;
+}
+.second-sec > h1{
+    overflow: hidden;
+font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+}
+.horse-img2 > img{
+    width: 100%;
+    height: fit-content;
+}
